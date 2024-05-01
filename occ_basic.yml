@@ -1,0 +1,59 @@
+# Conda environment descriptor
+# To install, type the following in a terminal window in the 
+# directory that contains this .yml file
+#       conda env create -f occ_basic.yml
+# or with mamba (recommended):
+#       mamba env create -f occ_basic.yml
+
+# Sets the name of the environment
+name: ees3506_5506_1
+
+# This block of text identifies the "channels" from which python packages are
+# hosted and installed from. By default, the conda packae manager installs packages
+# from the defaults channel, but Conda-forge is a community led channel that maintains
+# up to date packages with the help of thousands of contributors.
+
+channels:
+  - defaults
+  - conda-forge
+
+## the Python packages you want to install and their versions. If version is not 
+## specified, it will dowbload the latest version available from the default or 
+## conda-forge channel
+
+dependencies:
+ - python=3.9    # Python version 3.9
+ - cmocean       # Oceanography colormaps
+ - cartopy
+ - cftime
+ - dask          # Parallel processing library
+ - dask-jobqueue # Deploy dask on job queue systems
+ - dask-labextension
+ - datashader
+ - gcsfs         # Google Cloud Service
+ - gsw           # TEOS-10 seawater library
+ - holoviews
+ - ipykernel
+ - ipython       # IPython interpreter and tools
+ - jupyter       # Jupyter federation architecture
+ - jupyterlab
+ - jupyterlab-git
+ - jupyter-server-proxy
+ - matplotlib    # 2D plotting library
+ - nc-time-axis
+ - netcdf4       # Wrapper for netcdf4
+ - nodejs
+ - numpy=1.23.5         # N-d array and numerics
+ - ocetrac
+ - pandas        # Labeled array library
+ - pytest
+ - scipy         # Common math/stats/science functions
+ - s3fs
+ - xarray        # N-d labeled array library
+ - xhistogram
+ - zarr
+ - pip
+ - xgcm
+ - pip:
+   - momlevel
+     # ignore for now - xgcm==0.6.0
