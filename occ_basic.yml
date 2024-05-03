@@ -6,7 +6,7 @@
 #       mamba env create -f occ_basic.yml
 
 # Sets the name of the environment
-name: ees3506_5506_1
+name: occ_basic
 
 # This block of text identifies the "channels" from which python packages are
 # hosted and installed from. By default, the conda packae manager installs packages
